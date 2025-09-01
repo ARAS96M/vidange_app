@@ -33,7 +33,7 @@ def ui_auth():
         name = st.text_input("Nom complet")
         email2 = st.text_input("Email ")
         phone = st.text_input("Téléphone")
-        pw1 = st.text_input("Mot de passe", type="password")
+        pw1 = st.text_input("Mot de passe", type="password", key="login_password")
         pw2 = st.text_input("Confirmer le mot de passe", type="password")
         if st.button("Créer mon compte", use_container_width=True):
             if pw1 != pw2:
@@ -366,3 +366,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
